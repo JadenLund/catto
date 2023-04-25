@@ -1,0 +1,46 @@
+:root {
+    background-image: linear-gradient(to bottom right, #4652ff, #ff9592);
+    width: 100%
+}
+
+.background-coloring {
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #737DFE, #FFCAC9);
+
+}
+
+.test {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.marquee {
+
+    overflow: hidden;
+    position: relative;
+    animation: MarqueeLeft linear 10s infinite;
+    grid-area: footer;
+}
+
+.marquee:hover {
+    cursor: url("../assets/Speckles_Kitty_paw-2.png.png"), auto;
+}
+
+@keyframes MarqueeLeft {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+body {
+    cursor: url("../assets/Speckles_Kitty_paw-1.png.png"), auto;
+    /* cursor: url("../../src/components/assets/Speckles_Kitty_paw-1.png.png"), active; */
+}
